@@ -21,10 +21,15 @@
     "@nestjs/common": "^7.6.15",
     "@nestjs/core": "^7.6.15",
     "@nestjs/platform-express": "^7.6.15",
+    "better-sqlite3": "^7.6.2",
+    "dotenv": "^16.0.3",
     "koishi": "^4.9.4",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^6.6.6"
+    "rxjs": "^6.6.6",
+    "sqlite3": "^5.1.2",
+    "typedi": "^0.10.0",
+    "typeorm": "^0.3.10"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.1.4",
