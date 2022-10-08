@@ -20,7 +20,7 @@ import {
  * State
  */
 @Entity('cookies', { schema: 'genshin-uid' })
-export class Cookies {
+export class Cookie {
     /**
      * id
      */

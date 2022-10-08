@@ -1,6 +1,7 @@
 import { Inject, Service } from 'typedi';
 import { DataSource, DataSourceOptions } from 'typeorm';
 import { ConfigService } from './config-service';
+import { Cookie } from './entities/cookies.entity';
 /**
  * dataSourceService
  */
@@ -28,5 +29,13 @@ export class DataSourceService {
      */
     async initialize(): Promise<void> {
         await this.dataSource.initialize();
+    }
+
+    async findByQid(id: string | number): Promise<Cookie> {
+        const query = this.dataSource.manager.createQueryBuilder(Cookie, 'cookie').where('cookie.qid = :id', { id });
+        const c = await query.getOne();
+
+        if (c == null) throw new Error(`NOT FOUND`);
+        return c;
     }
 }
