@@ -1,5 +1,0 @@
-port: 8080
-plugins:
-  adapter-onebot:
-    protocol: ws-reverse
-    selfId: '123456789'

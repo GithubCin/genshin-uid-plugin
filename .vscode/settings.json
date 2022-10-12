@@ -34,6 +34,7 @@
   "npm-scripts.showStartNotification": false,
   "cSpell.words": [
     "GENSHIN",
-    "koishijs"
+    "koishijs",
+    "retcode"
   ]
 }

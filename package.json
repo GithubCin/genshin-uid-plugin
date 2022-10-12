@@ -25,6 +25,7 @@
     "dotenv": "^16.0.3",
     "koishi": "^4.9.4",
     "node-fetch": "2.6.1",
+    "puppeteer": "^18.2.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.6.6",
